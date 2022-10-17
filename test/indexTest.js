@@ -8,6 +8,7 @@ describe( "index.js", () => {
     event.initEvent( 'DOMContentLoaded', true, true );
     window.document.dispatchEvent( event );
 
+    
     expect( document.querySelector( 'p' )
         .textContent )
       .to.equal( "This is really cool!" );
